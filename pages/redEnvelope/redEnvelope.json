@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "custom-tab-bar":"../../custom-tab-bar/index"
+  },
+  "navigationBarTitleText":"红包" ,
+  "navigationBarBackgroundColor":"#F0F0F0",
+  "navigationBarTextStyle":"black"
+}

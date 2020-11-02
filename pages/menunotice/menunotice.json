@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tab":"../../component/tab/tab",
+    "mp-loading":"weui-miniprogram/loading/loading"
+  
+  },
+  "navigationBarTitleText":"餐牌预告" ,
+  "navigationBarBackgroundColor":"#F0F0F0",
+  "navigationBarTextStyle":"black"
+}

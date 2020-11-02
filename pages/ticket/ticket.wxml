@@ -1,0 +1,2 @@
+<ticketTest wx:for="{{testArray}}" wx:key="this" name1="{{item.name1}}" price1="{{item.price1}}" originalPrice="{{item.originalPrice}}" discount="{{item.discount}}" xuLine="{{item.xuLine}}" saveMoney="{{item.saveMoney}}">
+</ticketTest>

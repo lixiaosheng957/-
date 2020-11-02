@@ -1,0 +1,151 @@
+/* ticket/ticket.wxss */
+.containerTicket {
+  width: 750rpx;
+  height: 290rpx;
+  /* background-color: brown; */
+  position: relative;
+  /* top: 0rpx;
+  left: 0rpx; */
+}
+
+.line {
+  width: 722rpx;
+  height: 4rpx;
+  position: absolute;
+  top: 22.6rpx;
+  left: 26rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #E5E5E5;
+  /* border: 1rpx solid black; */
+}
+
+.imageCun {
+  width: 200rpx;
+  height: 133.2rpx;
+  position: absolute;
+  left: 32rpx;
+  top: 54rpx;
+}
+
+.imagePng {
+  width: 200rpx;
+  height: 133.2rpx;
+}
+
+.name {
+  width: 294rpx;
+  height: 44rpx; 
+  position: absolute;
+  /* font-weight: 500; */
+  left: 250rpx;
+  top: 50rpx;
+  /* font-family: PingFangSC-Medium; */
+  font-size: 32rpx;
+  color: #000000;
+  line-height: 44rpx;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  width: 44rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 254rpx;
+  top: 100rpx;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  color: #FF0000;
+}
+
+.rectangle {
+  width: 172rpx;
+  height: 48rpx;
+  position: absolute;
+  left: 252rpx;
+  top: 158rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #C1C1C1;
+  border-radius: 4px;
+}
+
+.discount {
+  width: 148rpx;
+  height: 34rpx;
+  position: absolute;
+  left: 12rpx;
+  top: 8rpx;
+  /* font-family: PingFangSC-Regular; */
+  font-size: 24rpx;
+  color: #A7A7A7;
+  line-height: 34rpx;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.di {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 252rpx;
+  top: 244rpx;
+}
+
+.save {
+  /* font-family: PingFangSC-Regular; */
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 34rpx;
+  width: 200rpx;
+  height: 34rpx;
+  position: absolute;
+  left: 298rpx;
+  top: 244rpx;
+}
+
+.buy {
+  width: 120rpx;
+  height: 56rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #1FCEB3;
+  position: absolute;
+  left: 598rpx;
+  top: 224rpx;
+}
+
+.buyTest {
+  width: 72rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  /* font-family: PingFangSC-Regular; */
+  font-size: 12px;
+  color: #1FCEB3;
+  position: absolute;
+  left: 24rpx;
+  top: 12rpx;
+}
+
+.originalPrice {
+  width: 44rpx;
+  height: 34rpx;
+  position: absolute;
+  left: 320rpx;
+  top: 108rpx;
+  /* font-family: PingFangSC-Medium; */
+  font-size: 24rpx;
+  color: #C8C8C8;
+}
+
+.xuLine {
+  width: 44rpx;
+  height: 4rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #C8C8C8;
+  position: absolute;
+  top: 125rpx;
+  left: 321rpx;
+}

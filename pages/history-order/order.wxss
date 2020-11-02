@@ -1,0 +1,55 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #F4F4F4;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.list-container{
+  height: 435px;
+  overflow-x: hidden;
+  width: 275px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+.top-background{
+  height: 11px;
+  background-color: #F4F4F4;
+}
+.order-container{
+  background-color: #F4F4F4;
+  height: 1104.4rpx;
+}
+
+.loading{
+  width: 100%;
+  height: 100rpx;
+}
+
+.demo0{
+  height: 100rpx;
+}
+
+.canNotLoading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100rpx;
+}
+
+.canNotLoading .text{
+  font-size: 18px;
+}

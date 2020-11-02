@@ -1,0 +1,43 @@
+<view>
+  <view class="position_info_list">
+    <view class="position_info">
+      <image src="./images/iconposition@2x.png" class="position_img"></image>
+      <view class="position">门诊大楼消化内科3楼301室</view>
+      <image src="./images/scan@2x.png" class="scan_img"></image>
+    </view>
+    <view class="user_info">
+     <text>Amilkey</text>
+     <text>18607123456</text>
+    </view>
+  </view>
+  <view class="install_info_list">
+      <view class="section install_item">
+        <picker>
+          <view class="picker pickerbox boxborder">
+            <text class="choose_exp">餐具数量</text>
+            <text class="choose_item">未选择</text>
+            <image class="arrow_img" src="./images/arrow1@2x.png"></image>
+          </view>
+        </picker>
+      </view>
+      <view class="section install_item">
+        <picker>
+          <view class="picker pickerbox">
+            <text class="choose_exp">订单备注</text>
+            <text class="choose_item">口味、偏好</text>
+            <image class="arrow_img" src="./images/arrow1@2x.png"></image>
+          </view>
+        </picker>
+    </view>
+  </view>
+  <view class="protection">
+    <view class="phone_protection">号码保护</view>
+    <view class="protection_info">对配送员隐藏您的真实手机号码，保护您的隐私</view>
+  </view>
+   <view class="goto_pay">
+    <view class="pay_money">¥44</view>
+    <view class="pay_btn">
+      <view>去支付</view>
+    </view>
+  </view>
+</view>

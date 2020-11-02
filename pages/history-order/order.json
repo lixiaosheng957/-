@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "order-list":"./component/order-list/order-list",
+    "custom-tab-bar":"../../custom-tab-bar/index",
+    "mp-loading":"weui-miniprogram/loading/loading"
+  },
+  "navigationBarTitleText":"订单列表" ,
+  "navigationBarBackgroundColor":"#F0F0F0",
+  "navigationBarTextStyle":"black"
+}

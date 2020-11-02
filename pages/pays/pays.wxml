@@ -1,0 +1,13 @@
+<!--pays/pays.wxml-->
+<view class="containerPays">
+  <pays-com wx:for="{{paysTest}}" question="{{item.question}}" answer="{{item.answer}}" wx:key="index"></pays-com>
+
+  <view class="frame4">
+    <view class="serviceHotline" bindtap="onCallHandle">
+      <view class="call">拨打客服热线</view>
+    </view>
+  </view>
+
+</view>
+
+

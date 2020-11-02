@@ -1,0 +1,18 @@
+<!--mobile/mobile.wxml-->
+<view class="container1">
+  <view class="containerMobile">
+    <view class="mobileNumber">手机号</view>
+    <input type="number" class="inputMobileNumber" placeholder="请输入新的手机号" placeholder-style="color:#B2B2B2" model:value="{{phoneNumber}}" bindinput="onPhoneNumberHandle"></input>
+    <view class="Line"></view>
+    <view class="vertificationCode">验证码</view>
+    <input type="number" placeholder="请输入验证码" class="inputVertifiCode" placeholder-style="color:#B2B2B2" model:value="{{Vcode}}"></input>
+    <view class="verifybtn" style="background-color:{{canGetVcode?getVcodeColor:canNotGetVcodeColor}}" bindtap="onGetVcodeHandle">
+      <view class="getVertifiCode">{{getVCodeContent}}</view>
+    </view>
+  </view>
+
+  <view class="verifybtn2" style="background-color:{{Vcode?getVcodeColor:canNotGetVcodeColor}}" bindtap="onSubmitHandle">
+    <view class="determine">确定</view>
+  </view>
+</view>
+

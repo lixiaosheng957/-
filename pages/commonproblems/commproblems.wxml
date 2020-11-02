@@ -1,0 +1,10 @@
+<view class="container">
+	<view class="problems-container">
+		<problems-tab wx:for="{{problemType}}" problemType="{{item}}" wx:key="item" index="{{index}}" length="{{problemType.length-1}}"></problems-tab>
+	</view>
+	<view class="call">
+		<view class="call-btn" bindtap="onCallHandle">
+			<text class="call-text">拨打客服热线</text>
+		</view>
+	</view>
+</view>

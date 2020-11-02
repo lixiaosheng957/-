@@ -1,0 +1,53 @@
+/* pages/commonproblems/component/problems-tab/problems-tab.wxss */
+.problems-tab{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.problems-text-container{
+  margin-left: 14.1px;
+  height: 100%;
+  width: 46.8vw;
+  line-height: 50px;
+  border-bottom: 0.5px solid #E4E4E4;
+}
+.problems-text{
+  color: #333333;
+  font-size: 15px;
+}
+.icon{
+  width: 46.8vw;
+  height: 100%;
+  position: relative;
+  border-bottom: 0.5px solid #E4E4E4;
+  margin-right: 16.3px; 
+}
+.icon image{
+  position: absolute;
+  right: 5px;
+  bottom: 16.7px;
+  width: 5.7px;
+  height: 10px;
+}
+.problems-text-container-1{
+  margin-left: 14.1px;
+  height: 100%;
+  width: 175.8px;
+  line-height: 50px;
+}
+.icon-1{
+  width: 175.8px;
+  height: 100%;
+  position: relative;
+  margin-right: 16.3px; 
+}
+.icon-1 image{
+  position: absolute;
+  right: 5px;
+  bottom: 16.7px;
+  width: 5.7px;
+  height: 10px;
+}

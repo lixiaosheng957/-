@@ -1,0 +1,10 @@
+<view class="container1">
+  <view class="nav">
+    <view><text>{{cate.title}}</text></view>
+    <view><text>{{cate.content}}</text></view>
+    <view>
+      <image src="{{cate.imgurl}}"></image>
+    </view>
+    <view><text>¥{{cate.price}}</text></view>
+  </view>
+</view>

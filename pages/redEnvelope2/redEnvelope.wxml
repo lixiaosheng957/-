@@ -1,0 +1,46 @@
+<view class="wrap">
+	<view class="nav" bindtap="onChageCurrentTabHandle">
+		<view class="nav_item {{currentTab==0?'active':''}}" data-index="0">满减券</view>
+		<view class="nav_item nav_left {{currentTab==1?'active':''}}" data-index="1"><text data-index="1">现金抵扣券</text></view>
+	</view>
+	<view class="red_list" hidden="{{currentTab!==0}}" >
+		<view class="red_item  {{selected===index?'checked_box':''}}" wx:for="{{redCan}}" wx:key="index" wx:if="{{fullList.length}}" data-index="{{index}}" bindtap="onSelectedRedHandle" >
+			<view class="item_money">
+				<text class="money_sign ">¥</text>
+				<text class="money_num ">{{item.money>=10?item.money:item.money+".0"}}</text>
+			</view>
+			<view class="item_time">
+				<view class="item_type ">{{item.type}}</view>
+				<view class="text_list">
+					<view class="text_item">{{item.full==0?"无门槛":"满"+item.full+"元可用"}}</view>
+					<view class="text_item">{{item.start}}至{{item.end}}</view>
+				</view>
+			</view>
+		</view>
+    <view class="status_red"  wx:if="{{!fullList.length}}">暂无可用红包</view>
+		<view class="red_description" wx:if="{{fullList.length}}">红包说明</view>
+	</view>
+  <view class="red_list" hidden="{{currentTab!==1}}">
+		<view class="red_item" wx:for="{{mortgageList}}" wx:key="index" wx:if="{{mortgageList.length}}">
+			<view class="item_money">
+				<text class="money_sign">¥</text>
+				<text class="money_num">{{item.money>=10?item.money:item.money+".0"}}</text>
+			</view>
+			<view class="item_time">
+				<view class="item_type">{{item.type}}</view>
+				<view class="text_list">
+					<view class="text_item">{{item.full==0?"无门槛":"满"+item.full+"元可用"}}</view>
+					<view class="text_item">{{item.start}}至{{item.end}}</view>
+				</view>
+			</view>
+		</view>
+    <view class="status_red" wx:if="{{!mortgageList.length}}">暂无可用抵押券</view>
+		<view class="red_description" wx:if="{{mortgageList.length}}">抵押券说明</view>
+	</view>
+		<view class="goto_pay">
+		<view class="pay_money">{{redCan[selected]?"可抵扣 ¥"+redCan[selected].money+" 元":'可抵扣 ¥0 元'}}</view>
+		<view class="pay_btn">
+			<view bindtap="onUseHandle">使用</view>
+		</view>
+	</view>
+</view>

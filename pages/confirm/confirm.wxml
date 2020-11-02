@@ -1,0 +1,15 @@
+<view class="container1">
+    <view class="nav">
+        <form>
+            <view class="input-value">
+                <label><text>用户名</text><input placeholder="请输入用户名" placeholder-style="font-size:32rpx"></input></label>
+            </view>
+            <view class="input-value">
+                <label><text>手机号</text><input placeholder="请输入手机号"></input></label>
+            </view>
+            <view class="submit-btn">
+                <text>确定</text>
+              </view>
+        </form>
+    </view>
+</view>

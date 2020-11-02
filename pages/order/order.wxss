@@ -1,0 +1,228 @@
+
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;    
+  margin: 0;
+}
+page{
+  height: 100%;
+  overflow: hidden;
+}
+.advertising{
+  width: 688rpx;
+  height: 214.8rpx;
+  margin-top:23.2rpx ;
+  margin-left: 32rpx;
+}
+.advertising_image{
+  width: 688rpx;
+  height: 214.8rpx;
+}
+.body{
+  display: flex;
+}
+
+.list-container{
+  overflow-x: hidden;
+  flex: 1;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+.list{
+  width: 152rpx;
+  /* height: 477rpx; */
+  margin-right: 24rpx;
+  background-color: #F8F8F8;
+}
+.list_item{
+  width: 152rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-family: PingFangSC-Regular,serif;
+  font-size: 28rpx;
+  color: #555555;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+.list_item>text{
+  margin-left: 24rpx;
+}
+.list_item.active{
+  background-color: #ffffff;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.host_ioc{
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+  margin-left: 24rpx;
+  margin-top: 28rpx;
+}
+.list_item>.host_font{
+  float: right;
+  margin-right: 34rpx;
+  height: 40rpx;
+  text-align: center;
+  margin-left: 0;
+}
+
+.title{
+  display: block;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #000000;
+  text-align: left;
+  padding-top: 36rpx;
+  margin-bottom:36rpx;
+}
+.big_title{
+  position: absolute;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: left;
+  padding-bottom: 28rpx;
+  background-color: #ffffff;
+  z-index: 2;
+  top: 0;
+}
+.food_list .food_item:first-child{
+  margin-top: 36rpx;
+} 
+/* .variety>.variety_item:last-child>.food_list>.food_item:last-child{
+  margin-bottom: 800rpx;
+} */
+.food_item{
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 60rpx;
+}
+.food_img{
+  flex:0 0 auto;
+  width: 152rpx;
+  height: 152rpx;
+  margin-right: 14rpx;
+  margin-left: 1rpx;
+}
+.food_info{
+  display: flex;
+  width: 384rpx;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.food_name{
+  flex: 1;
+  font-family: PingFangSC-Regular,serif;
+  width: 100%;
+  font-size: 32rpx;
+  color: #000000;
+  height: 44rpx;
+  /* line-height: 44rpx; */
+  text-align: left;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.food_sale{
+  flex: 1;
+  opacity: 0.66;
+  font-family: PingFangSC-Regular,serif;
+  font-size: 22rpx;
+  color: #333333;
+  text-align: center;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: left;
+}
+.food_money{
+  flex: 1;
+  font-family: PingFangSC-Regular,serif;
+  font-size: 36rpx;
+  color: #FF1800;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: left;
+  /* margin-top: 36rpx; */
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  right: 26rpx;
+  bottom: 0;
+  /* animation: vertical-animation 2s ease-in 1s infinite ; */
+}
+.cart_img{
+  width: 60rpx;
+  height: 60rpx;
+  /* animation: hor-animation 2s ease-in 1s infinite ; */
+}
+.food_img_tocart{
+  width:100rpx;
+  height:100rpx;
+  position:fixed;
+  z-index:1010;
+  border-radius: 50%;
+  /* opacity: 0; */
+}
+.qiuqiu{
+  width: 30rpx;
+  height: 30rpx;
+  position:fixed;
+  z-index:1010;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: red;
+}
+.operation-num {
+  width: 174rpx;
+  height: 48rpx;
+  position: absolute;
+  bottom: 0;
+  right: -24rpx;
+  display: flex;
+}
+
+.operation-num .less {
+  width: 50rpx;
+  height: 48rpx;
+}
+
+.operation-num  image {
+  width: 50rpx;
+  height: 48rpx;
+}
+
+
+.operation-num .num {
+  width: 50rpx;
+  height: 48rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.operation-num .num text {
+  line-height: 48rpx;
+  color: #525252;
+}
+
+.operation-num .add {
+  width: 50rpx;
+  height: 48rpx;
+}
+
+

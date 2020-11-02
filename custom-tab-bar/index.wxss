@@ -1,0 +1,81 @@
+
+.tabbar {
+    width: 100vw;
+    height: 102rpx;
+    background: #F8F8F8;
+    box-sizing: border-box;
+    border-top: 1px solid #B7B7B7;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+}
+
+.tabbar .tab1 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabbar .tab1 .tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.tabbar .tab1 .tab-item:nth-child(1) .img {
+    width: 56rpx;
+    height: 42rpx;
+}
+
+.tabbar .tab1 .tab-item:nth-child(2) .img {
+    width: 50.4rpx;
+    height: 44rpx;
+}
+
+.tabbar .tab1 .tab-item:nth-child(3) .img {
+    width: 43rpx;
+    height: 42.6rpx;
+}
+
+.tabbar .tab1 .tab-item:nth-child(4) .img {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.tabbar .tab1 .tab-item .title {
+    font-size: 24rpx;
+    color: #555555;
+    letter-spacing: -0.29px;
+    line-height: 36rpx;
+    margin-top:4rpx;
+}
+
+.tabbar .tab1 .tab-item .num {
+    position: absolute;
+    width: 30rpx;
+    height: 30rpx;
+    background: #FF0000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30rpx;
+    font-size: 24rpx;
+    color: #FFFFFF;
+    top:-10rpx;
+    right:0rpx;
+    z-index:9999;
+}
+.tabbar .tab1 .tab-item .before{
+    content: "";
+    display:block;
+    position: absolute;
+    width:18rpx;
+    height:18rpx;
+    background:#FF0000;
+    top:-3rpx;
+    right:-2rpx;
+    border-radius: 50%;
+}

@@ -1,0 +1,16 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+	<!-- <view class="top-background"></view> -->
+	<scroll-view class="order-container" mut-bind:tap="onToOrdertailsHandle" scroll-y="true" bindscrolltolower="onGetMoreHandle">
+		<order-list wx:for="{{orderList}}" index="{{index}}" order-info="{{item}}" data-index="{{index}}" wx:key="index" bind:up="_up">
+		</order-list>
+		<view class="loading" wx:if="{{canLoading}}">
+			<mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading>
+		</view>
+		<view class="canNotLoading" wx:if="{{!canLoading}}">
+			<text class="text">到底了</text>
+		</view>
+	</scroll-view>
+</view>
+<custom-tab-bar class="tab-bar"></custom-tab-bar>
+<!-- test -->

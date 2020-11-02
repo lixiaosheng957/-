@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/order/order",
+    "pages/history-order/order",
+    "pages/redEnvelope2/redEnvelope",
+    "pages/pays/pays",
+    "pages/ticket/ticket",
+    "pages/paySuccess/paySuccess",
+    "pages/mobile/mobile",
+    "pages/shoppingcar/shoppingcar",
+    "pages/commonproblems/commproblems",
+    "pages/settlementTwo/settlementTwo",
+    "pages/settlementOne/settlementOne",
+    "pages/redEnvelope/redEnvelope",
+    "pages/feedback/feedback",
+    "pages/confirm/confirm",
+    "pages/orderdetails/orderdetails",
+    "pages/me/me",
+    "pages/menunotice/menunotice",
+    "pages/verify/verify",
+    "pages/verify2/verify",
+    "pages/login/login",
+    "pages/authorization/authorization"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "custom":true,
+    "list":[
+      {"pagePath":"pages/order/order","text":"点餐","iconPath":"/image/menuorder@2x.png"},
+      {"pagePath":"pages/shoppingcar/shoppingcar","text":"购物车","iconPath":"/image/menucart@2x.png"},
+      {"pagePath":"pages/menunotice/menunotice","text":"餐牌预告","iconPath":"/image/menuforetell@2x.png"},
+      {"pagePath":"pages/me/me","text":"我的","selectedIconPath":"/image/menu_iconmy_hover@2x.png","iconPath":"/image/menumy@2x.png"}
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib":{
+    "weui":true
+  }
+}

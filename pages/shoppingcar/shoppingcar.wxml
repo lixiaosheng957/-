@@ -1,0 +1,69 @@
+<!--pages/shoppingcar/shoppingcar.wxml-->
+<view class="container">
+	<view class="empty" wx:if="{{total_num == 0}}">
+		<view class="empty-icon">
+			<image src="../../source/noshoppingcart@2x.png" class="icon"></image>
+		</view>
+		<view class="empty-text">
+			<text>购物车空空如也</text>
+		</view>
+		<view class="goto-order" bindtap="onGoOrderHandle">
+			<text>继续点餐</text>
+		</view>
+	</view>
+	<view class="goods-select">
+		<view class="good-item" wx:if="{{item.food_num != 0}}" wx:for="{{cartList}}" wx:key="index">
+			<view class="img-container">
+				<image src="../../source/orderpic1@2x.png"></image>
+			</view>
+			<view class="good-name"><text>{{item.food_name}}</text></view>
+			<view class="operation-num">
+				<view class="less" bindtap="onLessHandle" data-index="{{index}}">
+					<view class="line"></view>
+				</view>
+				<view class="num"><text>{{item.food_num}}</text></view>
+				<view class="add" bindtap="onAddHandle" data-index="{{index}}">
+					<view class="line1"></view>
+					<view class="line2"></view>
+				</view>
+			</view>
+			<view class="price"><text>￥{{item.food_num * item.food_price}}</text></view>
+		</view>
+		<view class="red-packets" wx:if="{{total_num}}" bindtap="onGoRedHandle">
+			<text class="type">平台红包</text>
+			<text class="discount {{redBag?'':'back'}}" >{{redBag?"－¥"+redBag.money:"未选择"}}</text>
+		</view>
+		<view class="total-price-container">
+			<view class="text-content">
+				<text class="total-text">合计 ￥ </text>
+				<text class="total-price">{{total_price}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="hot">
+		<view class="title"><text>热销品推荐</text></view>
+		<view class="nav">
+			<view class="nav-btn">
+				<view class="first" bindtap="onActiveHandle" data-index="1" style="color:{{left?color1:color2}}"><text>营养套餐</text></view>
+				<view class="second" bindtap="onActiveHandle" data-index="2" style="color:{{left?color2:color1}}"><text>经典炒菜</text></view>
+			</view>
+			<view class="slider" id="slider" style="left:{{left?0:90}}px"></view>
+		</view>
+		<view class="selection-container">
+			<scroll-view class="scorll-image" scroll-x="true">
+				<view class="image-container" wx:for="{{imgListUrl}}" wx:key="index">
+					<image src="{{item}}"></image>
+				</view>
+				<view class="abc"></view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="pay">
+		<view class="pay-total-price">
+			<text class="total-pay">总金额</text>
+			<text class="icon">￥</text>
+			<text class="price">{{total_price}}</text>
+		</view>
+		<button class="go-to-pay" type="primary" style="width:85.33vw" bindtap="onOrderSubmitHandle">结算</button>
+	</view>
+</view>

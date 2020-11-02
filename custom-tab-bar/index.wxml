@@ -1,0 +1,11 @@
+<view class="tabbar">
+    <view class="tab1">
+        <view class="tab-item" wx:for="{{list}}" 
+        bindtap="onselectBarHandle" data-path="{{item.pagePath}}" data-index="{{index}}" wx:key="index" id="{{index==1?'cart':''}}">
+            <image src="{{selectIndex==index?item.selectedIconPath:item.iconPath}}" class="img"></image>
+            <view class="title" style="color:{{selectIndex==index?selectColor:color}}">{{item.text}}</view>
+            <text class="num" wx:if="{{index===1 && count > 0}}" id="cart">{{count}}</text>
+            <text class="before" wx:if="{{index===3}}"></text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="problems-tab" bindtap="onNavigetorHandle" data-path="{{problemType.url}}">
+	<view class="problems-text-container" style="border-bottom:{{index===length?'none':''}}">
+		<text class="problem-text">{{problemType.title}}</text>
+	</view>
+	<view class="icon" style="border-bottom:{{index===length?'none':''}}">
+		<image src="../../../../source/arrow1@2x.png"></image>
+	</view>
+</view>

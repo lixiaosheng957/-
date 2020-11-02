@@ -1,0 +1,18 @@
+<!--pages/paySuccess/paySuccess.wxml-->
+<view class="containerCommon">
+  <view class="frame">
+    <image src="/image/feedback_icon_succeed@2x.png" class="correct"></image>
+    <view class="payGood">支付成功</view>
+    <view class="wxPay">
+      微信支付
+      <view class="price">{{price}}</view>
+      元
+    </view>
+    <view class="confirmOrder" bindtap="onGoOrderHandle">
+      <view class="confirm" >确认</view>
+    </view>
+    <view class="checkOrder" bindtap="onGoHistoryOrderHandle">
+      <view class="check" >查看订单</view>
+    </view>
+  </view>
+</view>

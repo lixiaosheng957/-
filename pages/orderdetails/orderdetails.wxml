@@ -1,0 +1,90 @@
+<view class="container1">
+    <view class="nav">
+        <view class="nav_row" wx:for="{{order.row_list}}" wx:key="index"> 
+            <view class="row_left">
+                <image src="{{item.food_img}}"></image>
+                <view class="row_text">
+                    <text class="title">{{item.food_name}}</text>
+                    <text class="num">x{{item.food_num}}</text>
+                </view>
+            </view>
+            <view class="price">
+                <text>￥{{item.food_price}}</text>
+            </view>
+        </view>
+        <view class="nav_red">
+            <view class="red_left">
+                <text>平台红包</text>
+            </view>
+            <view class="red_right">
+                <text wx:if="{{order.bag!=0}}">-￥{{order.bag}}</text>
+                <text wx:else>￥0</text>
+            </view>
+        </view>
+        <view class="nav_price">
+            <view class="total_price"><text class="total">合计</text><text class="qian">￥</text><text
+                    class="price_num">{{order.total_price}}</text></view>
+        </view>
+        <view class="nav_touch" bindtap="onMakePhoneHandle">
+            <view class="touch_btn">
+                <image src="../../image/telephone@2x.png"></image><text>联系食堂</text>
+            </view>
+        </view>
+    </view>
+    <view class="main">
+        <view class="mian_del firct">
+            <view class="del">
+                <text>配送地址</text>
+            </view>
+            <view class="del_text">
+                <view class="del_row">
+                    <text>{{order.contact}}</text>
+                    <text>{{order.address}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="mian_del">
+            <view class="del">
+                <text>订单备注</text>
+            </view>
+            <view class="del_text">
+                <view class="del_row">
+                    <text>{{order.remark}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="mian_del">
+            <view class="del">
+                <text>餐具数量</text>
+            </view>
+            <view class="del_text">
+                <view class="del_row">
+                    <text>{{order.table_ware_num}}份</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="footer_row">
+            <view class="row">
+                <text>订单编号</text>
+            </view>
+            <view class="row_text">
+                <view class="row_xi">
+                    <text>{{order.id}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="footer_row">
+            <view class="row">
+                <text>支付方式</text>
+            </view>
+            <view class="row_text">
+                <view class="row_xi">
+                    <text>{{order.mode}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <custom-tab-bar></custom-tab-bar>
+</view>

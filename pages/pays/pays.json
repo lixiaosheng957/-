@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "pays-com": "/component/pays-com/pays-com"
+  }
+}

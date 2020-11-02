@@ -1,0 +1,37 @@
+<view class="container1">
+    <view class="header">
+        <view class="head">
+            <view class="img">
+                <image src="{{user.head}}"></image>
+            </view>
+            <view class="txt">
+                <block wx:if="{{login}}">
+                    <text class="nickname">{{user.username}}</text>
+                    <text class="phone">{{user.phone}}</text>
+                </block>
+                <block wx:else> 
+                    <view class="login"><text>你尚未</text><navigator url="/pages/login/login">登录</navigator></view>
+                </block>
+            </view>
+        </view>
+    </view>
+
+    <view class="nav">
+        <view class="nav-item" wx:for="{{meItem}}" wx:key="index" data-url="{{item.url}}" bindtap="onNavigaterHandle">
+            <view class="item-left">
+                <image src="{{item.img1}}" class="image1"></image>
+                <text>{{item.title}}</text>
+            </view>
+            <view class="item-right">
+                <text wx:if="{{item.content}}">{{item.content}}</text>
+                <image src="{{item.img2}}" class="image2"></image>
+                
+            </view>
+        </view>
+    </view>
+
+
+    <view class="section" wx:if="{{login}}" bindtap="onQuitHandle">
+        <text>退出账号</text>
+    </view>
+</view>

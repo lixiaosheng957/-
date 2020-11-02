@@ -1,0 +1,72 @@
+<view>
+	<view class="position_info_list">
+		<view class="position_info">
+			<image src="./images/iconposition@2x.png" class="position_img"></image>
+			<view class="position">门诊大楼消化内科3楼301室</view>
+			<image src="./images/scan@2x.png" class="scan_img"></image>
+		</view>
+		<view class="user_info">
+			<text>Amilkey</text>
+			<text>18607123456</text>
+		</view>
+	</view>
+	<view class="goods-select">
+		<view class="good-item" wx:if="{{item.food_num != 0}}" wx:for="{{cartList}}" wx:key="index" >
+			<view class="img-container">
+				<image src="../../source/orderpic1@2x.png"></image>
+			</view>
+			<view class="good-name"><text>{{item.food_name}}</text></view>
+			<view class="operation-num">
+				<view class="less">
+					<view class="line"></view>
+				</view>
+				<view class="num"><text>{{item.food_num}}</text></view>
+				<view class="add">
+					<view class="line1"></view>
+					<view class="line2"></view>
+				</view>
+			</view>
+			<view class="price"><text>￥{{item.food_num * item.food_price}}</text></view>
+		</view>
+		<view class="red-packets" wx:if="{{redBag}}"  bindtap="onGoRedHandle">
+			<text class="type">平台红包</text>
+			<text class="discount {{redBag?'':'back'}}" >{{redBag?"－¥"+redBag.money:"未选择"}}</text>
+		</view>
+		<view class="total-price-container">
+			<view class="text-content">
+				<text class="total-text">合计 ￥ </text>
+				<text class="total-price">{{total_price}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="install_info_list">
+		<view class="section install_item">
+			<picker bindchange="onBindPickerChangeHandle" range="{{tableware_Number}}" value="{{tableware_Index}}">
+				<view class="picker pickerbox boxborder">
+					<text class="choose_exp">餐具数量</text>
+					<text class="choose_item">{{tableware_Index >= 0?tableware_Number[tableware_Index]:"未选择"}}</text>
+					<image class="arrow_img" src="./images/arrow1@2x.png"></image>
+				</view>
+			</picker>
+		</view>
+		<view class="section install_item">
+			<picker bindchange="onBindNotesChangeHandle" value="{{notes_Index}}" range="{{order_Notes}}">
+				<view class="picker pickerbox">
+					<text class="choose_exp">订单备注</text>
+					<text class="choose_item">{{notes_Index >= 0?order_Notes[notes_Index]:"口味、偏好"}}</text>
+					<image class="arrow_img" src="./images/arrow1@2x.png"></image>
+				</view>
+			</picker>
+		</view>
+	</view>
+	<view class="protection">
+		<view class="phone_protection">号码保护</view>
+		<view class="protection_info">对配送员隐藏您的真实手机号码，保护您的隐私</view>
+	</view>
+	<view class="goto_pay">
+		<view class="pay_money">¥{{total_price}}</view>
+		<view class="pay_btn">
+			<view bindtap="onGoPayHandle">去支付</view>
+		</view>
+	</view>
+</view>

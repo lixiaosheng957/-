@@ -1,0 +1,50 @@
+<view>
+	<swiper class='u-wrp-bnr advertising' autoplay='true' interval='5000' duration='1000' circular='true' bindtap="onGoTicketHandle">
+		<block wx:for="{{bnrUrl}}" wx:key="index">
+			<swiper-item>
+				<image src='{{item.url}}' class='u-img-slide advertising_image' mode='scaleToFill'></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="body">
+		<scroll-view scroll-y="true" class="list" style="height:{{boxHeight}}px">
+			<view class="list_item  {{indexId==index?'active':''}}" wx:for="{{variety}}" wx:key="index" data-index="{{index}}" bindtap="onJumpHandle">
+				<image src="./images/iocnhot@2x.png" class="host_ioc" wx:if="{{index==0}}"></image>
+				<text class="{{index==0?'host_font':''}}">{{item.name}}</text>
+			</view>
+		</scroll-view>
+		<view style="position: relative;" class="list-container">
+			<view class="title big_title">{{variety[indexId].name}}</view>
+			<scroll-view scroll-with-animation enhanced showScrollbar="false" scroll-y="true" class="menu" bindscroll="onNewSrcoll" style="height:{{boxHeight}}px" scroll-into-view="{{toTitle}}">
+				<view class="variety">
+					<view class="variety_item" id="type-{{father.id}}" wx:for="{{variety}}" wx:key="index" wx:for-item="father" style="margin-bottom:{{boxHeight-76}}{{father.id==variety.length-1?'px':''}}">
+						<view class="title" id="title-{{father.id}}">{{father.name}}</view>
+						<view class="food_list">
+							<view class="food_item" wx:for="{{father.foodlist}}" wx:key="index">
+								<image src="{{item.food_img}}" class="food_img"></image>
+								<view class="food_info">
+									<text class="food_name">{{item.food_name}}</text>
+									<text class="food_sale">月售{{item.scale}} 赞{{item.good}}</text>
+									<text class="food_money">¥{{item.food_price}}</text>
+								</view>
+								<view class="operation-num" wx:if="{{item.food_num!=0}}">
+									<view class="less" bindtap="onLessHandle" data-index="{{index}}" data-id="{{father.id}}">
+										<image src="./images/less.png"></image>
+									</view>
+									<view class="num"><text>{{item.food_num}}</text></view>
+									<view class="add" bindtap="onAddHandle" data-index="{{index}}" data-id="{{father.id}}">
+											<image src="./images/add.png"></image>
+									</view>
+								</view>
+								<view class="cart" wx:else bindtap="onDebounceHandle" data-index="{{index}}" data-id="{{father.id}}">
+									<image src="./images/iconcart@2x.png" class="cart_img"></image>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="qiuqiu" animation="{{animationList}}" style="left: {{bus_x}}px; top: {{bus_y}}px;"></view>
+			</scroll-view>
+		</view>
+	</view>
+</view>

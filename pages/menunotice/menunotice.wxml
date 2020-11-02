@@ -1,0 +1,22 @@
+<view class="container1">
+	<view class="date">
+		<view class="date-row">
+			<scroll-view scroll-x scroll-with-animation bindtap="onSelectItemHandle1" id="scroll-view">
+				<view class="scroll" wx:for="{{datelist}}" wx:key="index" style="border-bottom:{{item.id===selectId?'4rpx solid #1FCEB3':''}}">
+					<view style="color:{{item.id===selectId?'#1FCEB3':''}}" data-id="{{item.id}}" id="day">{{item.date}}</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<scroll-view class="cuisine" scroll-y="true" bindscrolltolower="onGetMoreHandle" lower-threshold="50">
+		<view class="tablist-container" wx:for="{{cateList}}" wx:key="index">
+			<tab wx:for="{{item}}" cate="{{item}}" wx:key="index"></tab>
+		</view>
+		<view class="loading" wx:if="{{canLoading}}">
+			<mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading>
+		</view>
+		<view class="canNotLoading" wx:if="{{!canLoading}}">
+			<text class="text">到底了</text>
+		</view>
+	</scroll-view>
+</view>

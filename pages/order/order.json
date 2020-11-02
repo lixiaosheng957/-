@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    
+  },
+  "navigationBarTitleText":"点餐" ,
+  "navigationBarBackgroundColor":"#1FCEB3",
+  "navigationBarTextStyle":"white"
+}

@@ -1,0 +1,19 @@
+<view class="containerTicket">
+  <view class="line"></view>
+  <view class="imageCun">
+    <image class="imagePng" src="/image/orderpic2@2x.png"></image>
+  </view>
+  <view class="name">{{name1}}</view>
+  <view class="price">{{price1}}</view>
+
+  <view class="originalPrice">{{originalPrice}}</view>
+  <view wx:if="{{xuLine}}" class="xuLine"></view>
+  <view class="rectangle">
+    <text class="discount">{{discount}}</text>
+  </view>
+  <image src="/image/di.png" class="di"> </image>
+  <view class="save">{{saveMoney}}</view>
+  <view class="buy">
+    <text class="buyTest">去购买</text>
+  </view>
+</view>

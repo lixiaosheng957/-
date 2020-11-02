@@ -1,0 +1,21 @@
+<view class="container1">
+	<view class="nav">
+		<view class="logo">
+			<view class="img">
+				<image src="../../image/tableware.png"></image>
+			</view>
+			<text>快点</text>
+		</view>
+		<view class="login">
+			<view class="phone-login">
+				<text>请完成微信授权以继续使用</text>
+			</view>
+			<view class="btn-row">
+				<button class="login-btn" bindgetuserinfo="onImpowerHandle" open-type="getUserInfo">
+					<text>微信授权用户信息</text>
+				</button>
+			</view>
+
+		</view>
+	</view>
+</view>

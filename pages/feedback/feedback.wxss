@@ -1,0 +1,89 @@
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #F4F4F4;
+}
+
+.container1 .nav {
+  color: "#333";
+  font-size: 30rpx;
+  margin: 32rpx 0 0 42rpx;
+}
+
+.container1 .nav .radio-group {
+  margin-top: 28rpx;
+}
+
+.container1 .nav .radio-group .top_radio {
+  margin-left: -2rpx;
+}
+
+.container1 .nav .radio-group .top_radio:nth-child(2) {
+  margin-top: 32rpx;
+}
+
+.container1 .nav .radio-group .top_radio:nth-child(1) view:nth-child(2) {
+  margin-left: 176rpx;
+}
+
+.container1 .nav .radio-group .top_radio:nth-child(2) view:nth-child(2) {
+  margin-left: 116rpx;
+}
+
+.container1 .nav .radio-group .top_radio view {
+  display: inline-flex;
+  align-items: center;
+}
+
+.container1 .nav .radio-group .top_radio image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 25.6rpx;
+}
+
+.container1 .nav .text-value {
+  position: relative;
+  margin-left: -4rpx;
+  margin-top: 41.6rpx;
+}
+
+.container1 .nav .text-value textarea {
+  background: #FFFFFF;
+  border:1rpx solid #D5D5D5;
+  border-radius: 5px;
+  padding: 18rpx 24rpx;
+  height: 264rpx;
+  width: 624rpx;
+  
+}
+
+.container1 .nav .text-value textarea .textarea-placeholder {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.container1 .nav .text-value text {
+  font-size: 26rpx;
+  color: #999999;
+  position: absolute;
+  right: 58rpx;
+  bottom: 18rpx;
+}
+.container1 .submit-btn{
+  margin:42rpx 26rpx;
+}
+.container1  .submit-btn text {
+  background: #1FCEB3;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 36rpx;
+  letter-spacing: 0;
+  margin:0px;
+  width:698rpx;
+  height:86rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

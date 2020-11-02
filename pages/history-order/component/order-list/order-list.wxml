@@ -1,0 +1,57 @@
+<!--pages/order/component/order-list/order-list.wxml-->
+<view class="order-tab">
+	<view class="order-time-and-status">
+		<view class="order-time">
+			<text class="time">下单时间  {{orderInfo.time}}</text>
+		</view>
+		<view class="order-status">
+			<text class="status-text" wx:if="{{orderInfo.status==-4}}">退款中</text>
+			<text class="status-text" wx:if="{{orderInfo.status==-3}}">已退款</text>
+			<text class="status-text" wx:if="{{orderInfo.status==-2}}">商家拒单</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==-1}}">订单取消</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==0||orderInfo.status==1}}">待付款</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==2}}">已付款</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==3}}">商家接单</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==6}}">配送中</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==7}}">已送达</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==8}}">确认收货</text>
+			<text class="status-text" wx:elif="{{orderInfo.status==9}}">订单已完成</text>
+		</view>
+	</view>
+	<view class="goods-select">
+		<view class="good-item" wx:for="{{orderInfo.row_list}}" wx:key="item">
+			<view class="good">
+				<text class="good-name">{{item.food_name}}</text>
+			</view>
+			<view class="good-number">
+				<text class="number-text">x{{item.food_num}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="goods-total">
+		<view class="goods-total-content">
+			<text class="total-text">   合计 {{orderInfo.total}} 件商品  </text>
+			<text class="total-price">¥ {{orderInfo.total_price}}</text>
+		</view>
+	</view>
+	<view class="other-operation">
+		<view class="operation_box">
+			<view class="operation" mut-bind:tap="onSureOrderHandle" data-index="{{index}}" data-again="again" wx:if="{{orderInfo.status>=6&&orderInfo.status<=8}}">
+				<text class="operation-text">确认订单</text>
+			</view>
+			<view class="operation" mut-bind:tap="onAnotherOrderHandle" data-index="{{index}}" data-again="again" wx:if="{{orderInfo.status==1}}">
+				<text class="operation-text">去付款</text>
+			</view>
+			<view class="operation" mut-bind:tap="onCancelOrderHandle" data-index="{{index}}" data-again="again" wx:if="{{orderInfo.status==1}}">
+				<text class="operation-text">取消订单</text>
+			</view>
+			<view class="operation" mut-bind:tap="onRefundHandle" data-index="{{index}}" data-again="again" wx:if="{{orderInfo.status==2||orderInfo.status==3}}">
+				<text class="operation-text">申请退款</text>
+			</view>
+			<view class="operation" mut-bind:tap="onAnotherOrderHandle" data-index="{{index}}" data-again="again" wx:if="{{orderInfo.status!=1}}">
+				<text class="operation-text">再来一单</text>
+			</view>
+		</view>
+
+	</view>
+</view>

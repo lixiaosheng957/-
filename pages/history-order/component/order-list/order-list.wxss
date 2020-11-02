@@ -1,0 +1,116 @@
+/* pages/order/component/order-list/order-list.wxss */
+
+.order-tab{
+  margin-top: 11.5px;
+}
+
+.order-time-and-status {
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.order-time {
+  margin-left: 14px;
+}
+
+.order-time .time {
+  font-size: 13px;
+  color: #666666;
+}
+
+.order-status {
+  margin-right: 16px;
+}
+
+.order-status .status-text {
+  font-size: 14px;
+  color: #F23C3C;
+}
+
+.goods-select{
+  width: 96vw;
+  margin-left: 15px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.good-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28.5px;
+}
+
+.good-item .good {
+  height: 28.5px;
+}
+
+.good-item .good .good-name {
+  font-size: 13px;
+  color: #666666;
+  padding-top:9px;
+  padding-bottom: 1px;
+}
+
+.good-item .good-number {
+  height: 28.5px;
+  margin-right: 14px;
+}
+
+.good-item .good-number .number-text {
+  font-size: 13px;
+  color: #666666;
+}
+
+.goods-total {
+  height: 39px;
+  position: relative;
+}
+
+.goods-total .goods-total-content {
+  position: absolute;
+  height: 39px;
+  right: 12px;
+}
+
+.goods-total .goods-total-content .total-text {
+  font-size: 13px;
+  color: #151515;
+  line-height: 39px;
+  margin-right: 7px;
+}
+
+.goods-total .goods-total-content .total-price {
+  font-size: 13px;
+  color: #151515;
+  line-height: 39px;
+  font-weight: bold;
+}
+
+.other-operation {
+  height: 41px;
+  background-color: #ffffff;
+  position: relative;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.other-operation .operation {
+  width: 68px;
+  height: 26px;
+  border: 0.5px solid #1FCEB3;
+  border-radius: 2.5px;
+  text-align: center;
+  margin-left: 18px;
+}
+.operation_box{
+  position: absolute;
+  right: 18px;
+  bottom: 6.5px;
+  display: flex;
+}
+.other-operation .operation .operation-text{
+  font-size: 12px;
+  color: #1FCEB3;
+}

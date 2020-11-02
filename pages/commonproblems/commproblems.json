@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "problems-tab":"./component/problems-tab/problems-tab"
+  },
+  "navigationBarTitleText":"常见问题"
+}

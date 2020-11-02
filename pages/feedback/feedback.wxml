@@ -1,0 +1,21 @@
+<view class="container1">
+  <view class="nav">
+    <text>问题类型</text>
+    <view class="radio-group">
+      <view class="top_radio" wx:for="{{issuemold}}" wx:key="index">
+        <view wx:for="{{item}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1" 
+        bindtap="onMoldHandle" data-item1="{{item1}}">
+          <image src="{{item1.bool?selectIcon:icon}}"></image><text>{{item1.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="text-value">
+      <textarea placeholder="您的建议是我们前进的动力！" maxlength="150" placeholder-class="textarea-placeholder"
+        value="{{feed.content}}" bindinput="onInputHandle"></textarea>
+      <text>{{feed.content.length}}/150</text>
+    </view>
+  </view>
+  <view class="submit-btn" bindtap="onSubmitHandle">
+    <text>确定</text>
+  </view>
+</view>

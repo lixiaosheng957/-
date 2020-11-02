@@ -1,0 +1,181 @@
+page{
+    height:100vh;
+    background: #F4F4F4;
+}
+.container1 {
+    width: 100vw;
+    margin-bottom:102rpx;
+    padding-top:20rpx;
+}
+
+.container1 .nav {
+    background: #FFFFFF;
+    padding: 0 24rpx;
+    margin-bottom: 20rpx;
+}
+
+.container1 .nav .nav_row {
+    display: flex;
+    position: relative;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #E5E5E5;
+}
+
+.container1 .nav .nav_row .row_left {
+    display: flex;
+}
+
+.container1 .nav .nav_row .row_left image {
+    width: 112rpx;
+    height: 112rpx;
+}
+
+.container1 .nav .nav_row .row_left .row_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+
+.container1 .nav .nav_row .row_left .row_text text {
+    line-height: 44rpx;
+}
+
+.container1 .nav .nav_row .row_left .row_text .title {
+    font-size: 32rpx;
+    color: #000000;
+}
+
+.container1 .nav .nav_row .row_left .row_text .num {
+    opacity: 0.66;
+    font-size: 22rpx;
+    color: #333333;
+}
+
+.container1 .nav .nav_row .price {
+    position: absolute;
+    right: 0px;
+    font-size: 32rpx;
+    color: #333333;
+}
+
+.container1 .nav .nav_red {
+    display: flex;
+    padding: 4rpx 0;
+    position: relative;
+    border-bottom: 1rpx solid #E5E5E5;
+    
+}
+
+.container1 .nav .nav_red .red_left {
+    width: 112rpx;
+    height: 74rpx;
+    text-align: center;
+    line-height: 74rpx;
+    font-size: 28rpx;
+    color: #333333;
+    
+}
+
+.container1 .nav .nav_red .red_right {
+    display: flex;
+    height: 74rpx;
+    font-size: 32rpx;
+    color: #FF0000;
+    text-align: center;
+    line-height: 74rpx;
+    position: absolute;
+    right: 0px;
+}
+
+.container1 .nav .nav_price {
+    border-bottom: 1rpx solid #E5E5E5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container1 .nav .nav_price .total_price {
+    height: 56rpx;
+    text-align: right;
+    line-height: 56rpx;
+    padding-top: 19.4rpx;
+    padding-bottom: 8.6rpx;
+    
+}
+
+.container1 .nav .nav_price .total_price .total {
+    font-size: 24rpx;
+    color: #333333;
+    margin-right: 20rpx;
+}
+
+.container1 .nav .nav_price .total_price .qian {
+    font-size: 28rpx;
+    color: #151515;
+}
+
+.container1 .nav .nav_price .total_price .price_num {
+    font-size: 48rpx;
+    color: #151515;
+}
+
+.container1 .nav .nav_touch {
+    display: flex;
+    padding-top: 29.4rpx;
+    padding-bottom: 34rpx;
+    justify-content: center;
+}
+
+.container1 .nav .nav_touch .touch_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 .nav .nav_touch .touch_btn image {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 9rpx;
+}
+
+.container1 .nav .nav_touch .touch_btn text {
+    font-size: 32rpx;
+    color: #333333;
+}
+.container1 .main {
+    box-sizing: border-box;
+}
+.container1 .main ,.container1 .footer{
+    background: #FFFFFF;
+    padding:24rpx;
+    padding-bottom: 26rpx;
+}
+.container1 .footer{
+    margin-top:20rpx;
+    padding-bottom: 32rpx;
+    box-sizing: border-box;
+}
+.container1 .main .mian_del,.container1 .footer .footer_row {
+    display: flex;
+    line-height: 40rpx;
+}
+.container1 .footer .footer_row:nth-child(2){
+    margin-top:40rpx;
+}
+.container1 .main .mian_del:not(.firct){
+    margin-top:40rpx;
+}
+.container1 .main .mian_del .del,.container1 .footer .footer_row .row{
+    font-size: 28rpx;
+    color: #909090;
+    margin-right: 28rpx;
+}
+
+.container1 .main .mian_del .del_text .del_row,.container1 .footer .footer_row .row_text .row_xi{
+    display: flex;
+    width:548rpx;
+    flex-direction: column;
+    font-size: 28rpx;
+    color: #333333;
+    word-wrap:break-word;
+}
+
